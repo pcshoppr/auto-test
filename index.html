@@ -85,15 +85,12 @@ input[type=submit] {
 <!--Make sure the form has the autocomplete function switched off:-->
 <form autocomplete="off" action="https://pcshoppr.github.io/">
   <div class="autocomplete" style="width:300px;">
-    <input id="myInput"   type="text"placeholder="Country" onclick="changeText()">
+    <input id="myInput" name="myCountry"  type="text" placeholder="Country">
   </div>
   <input type="submit">
 </form>
 
-<p>Add text below with spaces.</p>
-<input id="userVal" type="text" value="">
-<input id="submitNum" type="submit" onclick="changeText()" value="View result">
-<div id="results"></div>
+
 
 <script>
 function autocomplete(inp, arr) {
